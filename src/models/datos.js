@@ -9,6 +9,14 @@ const datosSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    mensaje:{
+        type: String,
+        required: true
+    },
+    fecha:{
+        type: String,
+    }
+
 });
 
 module.exports = mongoose.model('Datos', datosSchema);
